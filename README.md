@@ -10,3 +10,21 @@ This project uses a synthetic dataset that simulates real hospital operations �
 It builds a Random Forest Regression model to predict hospital occupancy rates weekly.
 
 The backend exposes a REST API (FastAPI) for real-time predictions, and the frontend (Flutter app) allows users to enter hospital statistics and instantly see the predicted occupancy.
+
+# 🧠 Machine Learning Model
+
+Framework: scikit-learn
+
+Model: RandomForestRegressor
+
+Goal: Predict occupancy_rate (proxy = patients_admitted / available_beds)
+
+Evaluation:
+
+- MAE: 0.0341
+
+- RMSE: 0.0785
+
+- R²: 0.53
+
+These results show that the model achieves low average error and explains over 50% of data variance — a strong baseline for operational forecasting.
